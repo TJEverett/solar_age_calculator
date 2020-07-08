@@ -6,6 +6,7 @@ export class Age {
 
   mercury(){
     this.ageMercury = Math.floor(this.ageEarth / 0.24);
+    this.deathMercury = Math.floor(this.deathEarth / 0.24);
   }
 
   venus(){
