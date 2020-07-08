@@ -4,7 +4,7 @@ describe('User Age Calculation', () => {
   let testUser;
 
   beforeEach(() => {
-    testUser = new Age(69);
+    testUser = new Age(69, 100);
   });
 
   test('should correctly create an age object', () => {
@@ -29,5 +29,17 @@ describe('User Age Calculation', () => {
   test('should correctly calculate age in jupiter years and save to object', () => {
     testUser.jupiter();
     expect(testUser.ageJupiter).toEqual(5);
+  });
+});
+
+describe('User Death Calculation', () => {
+  let testUser;
+
+  beforeEach(() => {
+    testUser = new Age(69, 100);
+  });
+
+  test('should correctly create an age object with time left before death', () => {
+    expect(testUser.deathEarth).toEqual(31);
   });
 });
