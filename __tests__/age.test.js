@@ -25,4 +25,9 @@ describe('User Age Calculation', () => {
     testUser.mars();
     expect(testUser.ageMars).toEqual(36);
   });
+
+  test('should correctly calculate age in jupiter years and save to object', () => {
+    testUser.jupiter();
+    expect(testUser.ageJupiter).toEqual(5);
+  });
 });
