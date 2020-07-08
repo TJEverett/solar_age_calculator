@@ -47,4 +47,9 @@ describe('User Death Calculation', () => {
     testUser.mercury();
     expect(testUser.deathMercury).toEqual(129)
   });
+
+  test('should correctly calculate years left until death on venus and save to object', () => {
+    testUser.venus();
+    expect(testUser.deathVenus).toEqual(50);
+  });
 });
