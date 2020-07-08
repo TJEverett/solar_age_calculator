@@ -52,4 +52,9 @@ describe('User Death Calculation', () => {
     testUser.venus();
     expect(testUser.deathVenus).toEqual(50);
   });
+
+  test('should correctly calculate years left until death on mars and save to object', () => {
+    testUser.mars();
+    expect(testUser.deathMars).toEqual(16);
+  });
 });
