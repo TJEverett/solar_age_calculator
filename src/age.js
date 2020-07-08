@@ -14,4 +14,8 @@ export class Age {
   mars(){
     this.ageMars = Math.floor(this.ageEarth / 1.88);
   }
+
+  jupiter(){
+    this.ageJupiter = Math.floor(this.ageEarth / 11.86);
+  }
 }
