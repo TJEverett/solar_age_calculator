@@ -1,6 +1,7 @@
 export class Age {
-  constructor(ageYears){
+  constructor(ageYears, expectedDeath){
     this.ageEarth = ageYears;
+    this.deathEarth = expectedDeath - ageYears;
   }
 
   mercury(){
