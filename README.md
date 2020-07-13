@@ -10,17 +10,16 @@ This project uses automated testing to check functions of an age calculator. The
 
 |Specifications|Example Input|Example Output|
 |-|-|-|
-|Create an object with an input of user’s age in earth years|let age = new Age(69)|age.ageEarth = 69|
-|Create a prototype that calculates the user’s age in Mercury years (0.24 divisor then round down) and adds it to the object|age.mercury()|age.ageMercury = 287|
-|Create a prototype that calculates the user’s age in Venus years (0.62 divisor then round down) and adds it to the object|age.venus()|age.ageVenus = 111|
-|Create a prototype that calculates the user’s age in Mars years (1.88 divisor then round down) and adds it to the object|age.mars()|age.ageMars = 36|
-|Create a prototype that calculates the user’s age in Jupiter years (11.86 divisor then round down) and adds it to the object|age.jupiter()|age.ageJupiter = 5|
-|-|-|-|
-|Update constructor to take average life expectancy for the user’s demographic and add their expected years left in earth years to the object (demographic – current age)|let age = new Age(69, 100)|age.deathEarth = 31|
-|Update mercury prototype so it calculates the user’s time left in Mercury years (0.24 divisor then round down) and adds it to the object|age.mercury()|age.deathMercury = 129|
-|Update venus prototype so it calculates the user’s time left in Venus years (0.62 divisor then round down) and adds it to the object|age.venus()|age.deathVenus = 50|
-|Update mars prototype so it calculates the user’s time left in Mars years (1.88 divisor then round down) and adds it to the object|age.mars()|age.deathMars = 16|
-|Update jupiter prototype so it calculates the user’s time left in Jupiter years (11.86 divisor then round down) and adds it to the object|age.jupiter()|age.deathJupiter = 2|
+|Takes the user's age and saves it|69|69|
+|Calculate the user’s age in Mercury years (0.24 divisor then round down)|69|287|
+|Calculate the user’s age in Venus years (0.62 divisor then round down)|69|111|
+|Calculate the user’s age in Mars years (1.88 divisor then round down)|69|36|
+|Calculate the user’s age in Jupiter years (11.86 divisor then round down)|69|5|
+|Take average life expectancy for the user’s demographic and calculate their expected years left in earth years(demographic – current age)|userAge = 69, lifeExpectancy = 100|31|
+|Calculate the user’s time left in Mercury years (0.24 divisor then round down)|31|129|
+|Calculate the user’s time left in Venus years (0.62 divisor then round down)|31|50|
+|Calculate the user’s time left in Mars years (1.88 divisor then round down)|31|16|
+|Calculate the user’s time left in Jupiter years (11.86 divisor then round down)|31|2|
 
 
 
