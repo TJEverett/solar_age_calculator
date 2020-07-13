@@ -2,6 +2,14 @@ export class Age {
   constructor(ageYears, expectedDeath){
     this.ageEarth = ageYears;
     this.deathEarth = expectedDeath - ageYears;
+    this.ageMercury = 0;
+    this.ageVenus = 0;
+    this.ageMars = 0;
+    this.ageJupiter = 0;
+    this.deathMercury = 0;
+    this.deathVenus = 0;
+    this.deathMars = 0;
+    this.deathJupiter = 0;
   }
 
   mercury(){
